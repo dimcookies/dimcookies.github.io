@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://www.timeanddate.com/timer/ -->
+<html lang="en">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Linux version 5.2.0">
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=utf-8">
+  <!--<base href="https://www.timeanddate.com/timer/">-->
+  <base href=".">
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="Set-Cookie" content=
+  "m0r9h.requestedBy=https://www.timeanddate.com/g00/timer/; Path=/; HttpOnly">
+
+  <script src="./Online%20Timer_files/$">
+  </script>
+  <script async type="text/javascript" src=
+  "./Online%20Timer_files/$(1)">
+  </script>
+  <script type="text/javascript">
+  ;/*7P1RCD3H9R0M*/var I10C;(function(I10C){ I10C.ScriptBegin || (I10C.ScriptBegin = function(){}); I10C.ScriptEnd || (I10C.ScriptEnd = function(){});I10C.PostMessage || (I10C.PostMessage = function(){ return this.postMessage.apply(this, arguments); });I10C.Location || (I10C.Location = function i10cloc(ba$e, isWrite, op){ var locat1onPresent = Object.getOwnPropertyNames(ba$e).indexOf('locat1on') !== -1; return (!isWrite) ? ( locat1onPresent ? ba$e.locat1on : (ba$e.location || ba$e.locat1on)) : (locat1onPresent ? {set href(v) {ba$e.locat1on.href = v;}, get href() {return i10cloc(ba$e,false,op);}} : {set href(v) {ba$e.location = v;}, get href() {return i10cloc(ba$e,false,op);}});});})(I10C || (I10C = {}));I10C.ScriptBegin();;(function(w) {
+    w.I10C = w.I10C || {};
+    w.I10C.Morph = 1;
+  }(window));
+  ; I10C.ScriptEnd();
+  </script>
+  <title>Online Timer</title>
+</head>
+<body>
+  
+  
+  
+  <link href="./Online Timer_files/$(2)" rel="stylesheet" type=
+  "text/css">
+  <link rel="stylesheet" type="text/css" href=
+  "./Online Timer_files/$(3)">
+  <style>
+  .bg-grey{background:#f8f8f8}.c-editModal .columns{padding:0}
+  </style>
+  <script src="./Online%20Timer_files/$(4)" async>
+  </script>
+  <style id="style-1-cropbar-clipper">
+  /* Copyright 2014 Evernote Corporation. All rights reserved. */
+  .en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+  }
+
+  .en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+  }
+  </style>
+  <div class="wrapper">
+    
+    
+    
+    <div class="main-content-div">
+      
+      
+      <section class="tool-section pdflexi">
+        <div class="fixed">
+          <script type="text/html" id="countdown-template">
+                        <div class="c-countdown tad-sortable-item" data-bind="css: {'c-countdown--running': $parent.getCountdownState($data) === 'running','c-countdown--waiting': $parent.getCountdownState($data) === 'waiting','c-countdown--done': $parent.getCountdownState($data) === 'done'}">
+                                <div style="font-size: 130px;">
+                                        <span class="timeLeft" id="mymessage">Java vs .Net</span>
+                                </div>
+
+
+                                <div class="progressBar" title="Progress bar">
+                                        <div class="currentProgress" data-bind="style: { width: completedRatio() * 100 + '%'}"></div>
+                                </div>
+                                <div class="timeCount">
+                                        <span class="timeLeft" data-bind="text: $parent.formatTime(getTimeLeft(), false)">&nbsp;</span>
+                                        <span class="timeAfter" data-bind="text: completedRatio() === 1 ? '' : completedRatio() === 0 ? '' : ''">&nbsp;</span>
+                                        <span class="timeAfter" data-bind="text: $parent.getCountdownState($data) === 'running' && $parent.currentMode() == $parent.modes.IN_SEQUENCE ? $parent.formatTime($parent.totalTimeLeft(), false) : ''">&nbsp;</span>
+                                </div>
+                                
+                                <div class="progressBar" title="Progress bar">
+                                        <div class="currentProgress" data-bind="style: { width: completedRatio() * 100 + '%'}"></div>
+                                </div>
+                                <div class="toolbox toolbox--manual fadeIn">
+                                 <button type="button" class="c-swatchButton c-swatchButton--start fadeIn" title="Start timer" data-bind="{click: startStop.toggle, disable: completedRatio() === 0, css: (status() === 0 ? 'c-swatchButton--pause' : 'c-swatchButton--start'), attr: { title: status() === 0 ? 'Stop/pause timer' : 'Start timer' }}">
+                                                <i class="i-font" data-bind="{text:(status() === 0 ? '&#xe02a;' : '&#xe01b;')}">&#xe01b;</i>
+                                        </button>
+                                        <button type="button" class="c-swatchButton c-swatchButton--reset fadeIn" title="Reset and start over" data-bind="click: $parent.resetSingle, enable: (status() === 1)">Reset</button>
+
+
+                                </div>
+                                
+                        </div>
+
+          </script>
+
+
+
+          <div data-bind="visible:true">
+            <section class="c-editModal" data-bind=
+            "if: selected() &amp;&amp; selected().isEditing">
+            </section>
+            <div class="c-timer c-timer--single" data-bind=
+            "css: { 'c-timer--single': countdowns.list().length === 1, 'c-timer--manualMode' : currentMode() == modes.MANUAL, 'c-timer--fullScreen' : fullScreenMode() }">
+              <div class="c-timer__config small">
+                
+              </div>
+              <div class="timerContainer">
+                
+                <div class=
+                "countdownList tad-sortable-container tad-sortable-anchor-only"
+                data-bind=
+                "template: { name: 'countdown-template', foreach: countdowns.list }"
+                data-tad-options=
+                "{ byAnchorOnly:true, koObservableArray:true, callback:vm.moveTo, dragClass:'is-dragging'}"
+                data-tad-control="tadSortable">
+                  <div class=
+                  "c-countdown tad-sortable-item c-countdown--done"
+                  data-bind=
+                  "css: {'c-countdown--running': $parent.getCountdownState($data) === 'running','c-countdown--waiting': $parent.getCountdownState($data) === 'waiting','c-countdown--done': $parent.getCountdownState($data) === 'done'}">
+                    <div class="timeCount">
+                      <span class="timeLeft" data-bind=
+                      "text: $parent.formatTime(getTimeLeft(), false)">
+                      00:00:00</span> <span class="timeAfter"
+                      data-bind=
+                      "text: completedRatio() === 1 ? '' : completedRatio() === 0 ? '' : ''">
+                      (done)</span>
+                    </div>
+                    <div class=
+                    "c-countdown__title tad-sortable-anchor">
+                      <span class="tad-sortable-anchor" data-bind=
+                      "text: label">Hackathon</span> (<span class=
+                      "tad-sortable-anchor" data-bind=
+                      "text: $parent.formatTime(getDuration(), false)">00:00:10</span>)<span data-bind="if:_alarm.getSound() !== $parent.sounds[0]"
+                      class="small soft">,&nbsp;<span data-bind=
+                      "text: _alarm.getSound().name">Horn</span>&nbsp;Alarm</span>
+                      <span class="c-countdown__edit"><a href=
+                      "https://www.timeanddate.com/timer/#"
+                      data-bind=
+                      "click: $parent.selectCountdown"><i class=
+                      "i-font"></i>&nbsp;Edit</a> </span>
+                    </div>
+                    <div class="progressBar" title="Progress bar">
+                      <div class="currentProgress" data-bind=
+                      "style: { width: completedRatio() * 100 + '%'}"
+                      style="width: 0%;"></div>
+                    </div>
+                    <div class="toolbox toolbox--manual fadeIn">
+                      <button type="button" class=
+                      "c-swatchButton fadeIn c-swatchButton--start"
+                      title="Start timer" data-bind=
+                      "{click: startStop.toggle, disable: completedRatio() === 0, css: (status() === 0 ? 'c-swatchButton--pause' : 'c-swatchButton--start'), attr: { title: status() === 0 ? 'Stop/pause timer' : 'Start timer' }}"
+                      disabled><i class="i-font" data-bind=
+                      "{text:(status() === 0 ? '' : '')}"></i></button>
+                      <button type="button" class=
+                      "c-swatchButton c-swatchButton--reset fadeIn"
+                      title="Reset and start over" data-bind=
+                      "click: $parent.resetSingle, enable: (status() === 1)">
+                      Reset</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+
+              <div >
+                  <button type="button" class=
+                  "c-swatchButton fadeIn c-swatchButton--start"
+                  title="Start timer" data-bind=
+                  "click: startStopToggle, css: (isMainRunning() ? 'c-swatchButton--pause' : 'c-swatchButton--start'), attr: { title: isMainRunning() ? 'Stop/pause timer' : 'Start timer' }, disable: totalCompletedRatio() &gt;= 1"
+                  disabled><i class="i-font" data-bind=
+                  "{text:(isMainRunning() ? '' : '')}"></i></button><button type="button"
+                  class=
+                  "c-swatchButton c-swatchButton--reset fadeIn"
+                  title="Reset and start over" data-bind=
+                  "click: reset, disable: isMainRunning() || totalCompletedRatio() === 0">Reset</button>
+                </div>
+              
+            </div>
+          </div>
+          <div>                                         
+            <button type="button" class="c-swatchButton c-swatchButton--start fadeIn" onclick="GetValue();" > Prev </button>
+            <button type="button" class="c-swatchButton c-swatchButton--start fadeIn" onclick="GetValue();" > Next </button>
+          </div>
+        </div>
+        <br>
+                        
+      </section>
+      <script type="text/javascript" >
+              var index = 1; 
+              function GetValue()
+              {
+                  var myarray= new Array("Java vs .Net","Python vs Ruby","Mongo vs Casandra");
+                  var mytext = myarray[Math.floor(index++ % myarray.length)];
+                  //alert(random);
+                  document.getElementById("mymessage").innerHTML=mytext;
+              }
+      </script>
+      <script type="text/javascript" src=
+      "./Online%20Timer_files/$(7)">
+      </script>
+      <script type="text/javascript" src=
+      "./Online%20Timer_files/$(8)">
+      </script>
+      <script src="./Online%20Timer_files/$(9)" type=
+      "text/javascript">
+      </script>
+      <script type="text/javascript" src=
+      "./Online%20Timer_files/$(10)">
+      </script>
+    </div>
+  </div>
+
+</body>
+</html>
