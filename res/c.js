@@ -210,7 +210,7 @@ I10C.ScriptBegin();
                 return this.getInitialTime() + this.getDuration()
             },
             getDuration: function() {
-            	return 2*1000
+            	return topicDuration*1000
                 //return this._alarm.getTimestamp()
             },
             getProgressTime: function() {
