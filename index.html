@@ -188,9 +188,7 @@
               var index = 1; 
               function GetValue()
               {
-                  var myarray= new Array("Java vs .Net","Python vs Ruby","Mongo vs Casandra");
-                  var mytext = myarray[Math.floor(index++ % myarray.length)];
-                  //alert(random);
+                  var mytext = topicsArray[Math.floor(index++ % topicsArray.length)];
                   document.getElementById("mymessage").innerHTML=mytext;
               }
       </script>
