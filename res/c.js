@@ -957,7 +957,7 @@ I10C.ScriptBegin();
         d = d(7);
         f.exports = [{
             name: "--" + d.SOUND_NAME_NONE + "--",
-            mp3: "Buzzer-SoundBible.com-188422102.mp3",
+            mp3: "buzzer.mp3",
             ogg: "telephone-ring-3.mp3"
         }, {
             name: d.SOUND_NAME_BEEP,
